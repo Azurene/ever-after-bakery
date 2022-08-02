@@ -1,8 +1,18 @@
 import React from 'react';
 
-function Header(){
+function Header(props){
     return (
-        <h2> About </h2>
+        
+        <header>
+            <nav>
+                <div> 
+                    <ul>
+                        <li> <span onClick={()=>{props.setCurrentPage('About')}} >About</span></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
     )
 }
 

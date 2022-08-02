@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Header from './components/Header';
 import About from './components/About';
-import ContactForm from './components/Contact';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,7 +13,7 @@ function pageChanger(page) {
     return <About/> 
   }
  if(page === "Contact") {
-    return <ContactForm/>
+    return <Contact/>
   }
 }
   return (
