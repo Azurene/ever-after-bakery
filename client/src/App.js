@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Header from './components/Header';
+import About from './components/About';
+import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
+  // uses state to get the page
+  const [ currentPage, setCurrentPage ] = useState()
+
+function pageChanger(page) {
+  if(page === "About") {
+    return <About/> 
+  }
+ if(page === "Contact") {
+    return <ContactForm/>
+  }
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header 
+      setCurrentPage={setCurrentPage}
+      className="App-header"/>
+     {pageChanger(currentPage)}
+      <Footer/>
+
+      <main>
+      {/* {!contactSelected ? (
+      <>
+       <Project projectImages={projectImages}></Project>
+       <Resume></Resume>
+      </>
+      ) : (
+      <ContactForm></ContactForm>
+      )} */}
+
+      </main>
     </div>
   );
 }
