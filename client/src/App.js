@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Header from './components/Header';
 import About from './components/About';
+import BakedGoods from './components/Baked-Goods';
+import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -12,7 +14,13 @@ function pageChanger(page) {
   if(page === "About") {
     return <About/> 
   }
- if(page === "Contact") {
+ if(page === "Baked-Goods") {
+    return <BakedGoods/>
+  }
+  if(page === "Newsletter") {
+    return <Newsletter/>
+  }
+  if(page === "Contact") {
     return <Contact/>
   }
 }
