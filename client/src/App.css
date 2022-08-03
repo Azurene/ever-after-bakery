@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+
+.about-container {
+  display:flex;
+  position: absolute;
+  left: 60%;
+  top:30%;
+  transform: translate(-50%,-50%);
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  width:80%;
+
+}
+.aboutMe-img {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction:column;
+ margin-top: 7rem;
+ margin-right: 2rem;
+}
+   
+.aboutMe {
+  margin-top: 10rem;
+  font-size: 20px;
+  text-align: center;
+  padding: 2rem;
+  background: rgb(30,30,30);
+  opacity: 75%;
+  border-radius: 10px;
+  width:40rem;
+  font-family: 'Handlee', cursive;
+}
+  
