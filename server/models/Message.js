@@ -9,7 +9,7 @@ const messageSchema = new Schema(
         email: {
             type: String,
             required: true,
-            match: [/.+@.+\..+/, 'Must match an email address!']
+            match: [/.+@.+\..+/, 'Please enter a valid Email']
         },
         message: {
             type: String,
