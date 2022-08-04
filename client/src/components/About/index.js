@@ -1,5 +1,5 @@
 import React from 'react';
-import wendy from '../../Assets/images/wendy.webp';
+import wendy from '../../assets/images/wendy.webp';
 function About(){
     return (
         <>
