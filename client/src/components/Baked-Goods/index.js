@@ -184,7 +184,7 @@ function BakedGoods(){
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7835.jpg`)}
+                    src={require(`../../assets/other/IMG_7847.jpg`)}
                     alt="other1"
                     className="img-thumbnail"
                     style={{width:"20%"}}
@@ -192,7 +192,7 @@ function BakedGoods(){
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7842.jpg`)}
+                    src={require(`../../assets/other/IMG_7848.jpg`)}
                     alt="other2"
                     className="img-thumbnail"
                     style={{width:"20%"}}
@@ -200,7 +200,7 @@ function BakedGoods(){
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7843.jpg`)}
+                    src={require(`../../assets/other/IMG_7860.jpg`)}
                     alt="other3"
                     className="img-thumbnail"
                     style={{width:"20%"}}
@@ -208,7 +208,7 @@ function BakedGoods(){
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7847.jpg`)}
+                    src={require(`../../assets/other/IMG_7880.jpg`)}
                     alt="other4"
                     className="img-thumbnail"
                     style={{width:"20%"}}
@@ -216,28 +216,20 @@ function BakedGoods(){
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7848.jpg`)}
-                    alt="other5"
-                    className="img-thumbnail"
-                    style={{width:"20%"}}
-                />
-                <img
-                    //src assignd required expression | incremental naming of the imgs using i
-                    // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7860.jpg`)}
+                    src={require(`../../assets/other/IMG_7894.jpg`)}
                     alt="other6"
                     className="img-thumbnail"
                     style={{width:"20%"}}
                 />
-                <img
+                {/* <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
                     src={require(`../../assets/specialty/IMG_7865.jpg`)}
                     alt="other7"
                     className="img-thumbnail"
                     style={{width:"20%"}}
-                />
-                <img
+                /> */}
+                {/* <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
                     src={require(`../../assets/specialty/IMG_7868.jpg`)}
@@ -252,23 +244,103 @@ function BakedGoods(){
                     alt="other9"
                     className="img-thumbnail"
                     style={{width:"20%"}}
-                />
-                <img
+                /> */}
+                {/* <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
                     src={require(`../../assets/specialty/IMG_7870.jpg`)}
                     alt="other10"
                     className="img-thumbnail"
                     style={{width:"20%"}}
-                />
+                /> */}
             </div>
 
             <div>
                 <h2>Specialty Items</h2>
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7835.jpg`)}
+                    alt="specialty1"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7869.jpg`)}
+                    alt="specialty2"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                 <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7843.jpg`)}
+                    alt="specialty3"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7865.jpg`)}
+                    alt="specialty4"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7868.jpg`)}
+                    alt="specialty5"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7904.jpg`)}
+                    alt="specialty6"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7903.jpg`)}
+                    alt="specialty7"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7902.jpg`)}
+                    alt="specialty8"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7901.jpg`)}
+                    alt="specialty9"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
+                <img
+                    //src assignd required expression | incremental naming of the imgs using i
+                    // default property --> is where the img has been saved. To render img, default property must be invoked  
+                    src={require(`../../assets/specialty/IMG_7900.jpg`)}
+                    alt="specialty10"
+                    className="img-thumbnail"
+                    style={{width:"20%"}}
+                />
             </div>
 
             <p>Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces.</p>
-            
+
         </div>
 
         
