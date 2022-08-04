@@ -221,42 +221,10 @@ function BakedGoods(){
                     className="img-thumbnail"
                     style={{width:"20%"}}
                 />
-                {/* <img
-                    //src assignd required expression | incremental naming of the imgs using i
-                    // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7865.jpg`)}
-                    alt="other7"
-                    className="img-thumbnail"
-                    style={{width:"20%"}}
-                /> */}
-                {/* <img
-                    //src assignd required expression | incremental naming of the imgs using i
-                    // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7868.jpg`)}
-                    alt="other8"
-                    className="img-thumbnail"
-                    style={{width:"20%"}}
-                />
-                <img
-                    //src assignd required expression | incremental naming of the imgs using i
-                    // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7869.jpg`)}
-                    alt="other9"
-                    className="img-thumbnail"
-                    style={{width:"20%"}}
-                /> */}
-                {/* <img
-                    //src assignd required expression | incremental naming of the imgs using i
-                    // default property --> is where the img has been saved. To render img, default property must be invoked  
-                    src={require(`../../assets/specialty/IMG_7870.jpg`)}
-                    alt="other10"
-                    className="img-thumbnail"
-                    style={{width:"20%"}}
-                /> */}
             </div>
 
             <div>
-                <h2>Specialty Items</h2>
+                <h2>Specialty Items:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -339,7 +307,8 @@ function BakedGoods(){
                 />
             </div>
 
-            <p>Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces.</p>
+            <p>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces."</p>
+            <p>-Wendy R.</p>
 
         </div>
 
