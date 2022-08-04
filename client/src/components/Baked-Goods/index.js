@@ -5,9 +5,74 @@ function BakedGoods(){
         <div>
             <h1>Baked Goods</h1>
 
-            <section>
-                <h2>carousel</h2>
-            </section>
+            <section className="gallery row" id="gallery">
+    <h2 className="fw-bold text-center">Gallery</h2>
+    {/* <!-- Insert gallery stuff here --> */}
+    <div id="myCarousel" className="carousel slide" data-bs-ride="true">
+        {/* <!-- Indicators --> */}
+        <ol className="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" className="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+        </ol>
+
+        {/* <!-- Wrapper for slides --> */}
+        <div className="carousel-inner">
+            <div className="carousel-item active">
+                <img className="d-block w-50 mx-auto" src={require('../../assets/cakes/IMG_7872.jpg')} alt="bakedgoods0" />
+                <div className="carousel-caption">
+                    <h3>Wheel</h3>
+                    <p>Professional </p>
+                </div>
+            </div>
+
+            <div className="carousel-item">
+                <img className="d-block w-50 mx-auto" src={require('../../assets/specialty/IMG_7899.jpg')} alt="bakedgoods" />
+                <div className="carousel-caption">
+                    <h3>Exterior</h3>
+                    <p>Targeting</p>
+                </div>
+            </div>
+
+            <div className="carousel-item">
+                <img className="d-block w-50 mx-auto pics" src={require('../../assets/specialty/IMG_7895.jpg')} alt="backedgoods1" />
+                <div className="carousel-caption">
+                    <h3>Wax</h3>
+                    <p>Protecting</p>
+                </div>
+            </div>
+
+            <div className="carousel-item">
+                <img className="d-block w-50 mx-auto pics" src={require('../../assets/cakes/IMG_7889.jpg')} alt="bakedgoods2" />
+                <div className="carousel-caption">
+                    <h3>Buffer</h3>
+                    <p>Buffer</p>
+                </div>
+            </div>
+
+            <div className="carousel-item">
+                <img className="d-block w-50 mx-auto pics" src={require('../../assets/specialty/IMG_7870.jpg')} alt="backedgoods3" />
+                <div className="carousel-caption">
+                    <h3>Engine</h3>
+                    <p>Spotless</p>
+                </div>
+            </div>
+
+        </div>
+
+        {/* <!-- Left and right controls --> */}
+        <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
             <div>
                 <h2>Cakes:</h2>
@@ -307,8 +372,7 @@ function BakedGoods(){
                 />
             </div>
 
-            <p>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces."</p>
-            <p>-Wendy R.</p>
+            <p>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces." -Wendy R.</p>
 
         </div>
 
