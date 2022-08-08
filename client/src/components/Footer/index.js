@@ -16,7 +16,7 @@ function Footer() {
                 </ul>
             </div> */}
 
-            <div>
+            <div id="contactInfo">
             <h2>Contact Info</h2>
                 <p>Ever After Bakery</p>
                 <p>8106 GENESTA AVE</p>
@@ -54,7 +54,7 @@ function Footer() {
                 </a>
             </div>
 
-            <div>
+            <div id="slogan">
                 <p>Made in a Home Kitchen</p>
             </div>
         </section>
