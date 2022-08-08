@@ -6,6 +6,7 @@ import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   // uses state to get the page
   const [ currentPage, setCurrentPage ] = useState()

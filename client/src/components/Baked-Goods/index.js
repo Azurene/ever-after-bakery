@@ -2,11 +2,11 @@ import React from 'react';
 
 function BakedGoods(){
     return (
-        <div>
-            <h1>Baked Goods</h1>
+        <div className='container'>
+            <h1 id='bakedTitle' className='d-flex justify-content-center pb-5'>Baked Goods</h1>
 
             <section className="gallery row" id="gallery">
-    <h2 className="fw-bold text-center">Gallery</h2>
+    {/* <h2 className="fw-bold text-center">Gallery</h2> */}
     {/* <!-- Insert gallery stuff here --> */}
     <div id="myCarousel" className="carousel slide" data-bs-ride="true">
         {/* <!-- Indicators --> */}
@@ -22,41 +22,42 @@ function BakedGoods(){
         <div className="carousel-inner">
             <div className="carousel-item active">
                 <img className="d-block w-50 mx-auto" src={require('../../assets/images/carousel/IMG_7872.jpg')} alt="bakedgoods0" />
-                <div className="carousel-caption">
-                    <h3>Wheel</h3>
-                    <p>Professional </p>
+                
+            </div><div className="carousel-caption ">
+                    <h3>Stranger Things Theme</h3>
+                    <p>Custom Cakes For All Occasions</p>
                 </div>
-            </div>
 
             <div className="carousel-item">
                 <img className="d-block w-50 mx-auto" src={require('../../assets/images/carousel/IMG_7899.jpg')} alt="bakedgoods" />
+                
                 <div className="carousel-caption">
-                    <h3>Exterior</h3>
-                    <p>Targeting</p>
+                    <h3>Day of the Dead Theme</h3>
+                    <p>Custom Cookies</p>
                 </div>
             </div>
 
             <div className="carousel-item">
                 <img className="d-block w-50 mx-auto pics" src={require('../../assets/images/carousel/IMG_7895.jpg')} alt="backedgoods1" />
                 <div className="carousel-caption">
-                    <h3>Wax</h3>
-                    <p>Protecting</p>
+                    <h3>Paint Your Own Cookies</h3>
+                    <p>Edible Fun Activity</p>
                 </div>
             </div>
 
             <div className="carousel-item">
                 <img className="d-block w-50 mx-auto pics" src={require('../../assets/images/carousel/IMG_7889.jpg')} alt="bakedgoods2" />
                 <div className="carousel-caption">
-                    <h3>Buffer</h3>
-                    <p>Buffer</p>
+                    <h3>Nightmare Before Christmas</h3>
+                    <p>Custom Birthday Cake</p>
                 </div>
             </div>
 
             <div className="carousel-item">
                 <img className="d-block w-50 mx-auto pics" src={require('../../assets/images/carousel/IMG_7870.jpg')} alt="backedgoods3" />
                 <div className="carousel-caption">
-                    <h3>Engine</h3>
-                    <p>Spotless</p>
+                    <h3>Valentine Hot Cocoa Bombs</h3>
+                    <p>Seasonal Goodies</p>
                 </div>
             </div>
 
@@ -75,7 +76,7 @@ function BakedGoods(){
 </section>
 
             <div>
-                <h2>Cakes:</h2>
+                <h2 className='d-flex justify-content-center'>Cakes:</h2>
                 {/* cakes */}
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
@@ -161,7 +162,7 @@ function BakedGoods(){
             </div>
 
             <div>
-                <h2>Cookies:</h2>
+                <h2 className='d-flex justify-content-center'>Cookies:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -245,7 +246,7 @@ function BakedGoods(){
             </div>
 
             <div>
-                <h2>Other:</h2>
+                <h2 className='d-flex justify-content-center'>Other:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -289,7 +290,7 @@ function BakedGoods(){
             </div>
 
             <div>
-                <h2>Specialty Items:</h2>
+                <h2 className='d-flex justify-content-center'>Specialty Items:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -372,7 +373,7 @@ function BakedGoods(){
                 />
             </div>
 
-            <p>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces." -Wendy R.</p>
+            <p className='d-flex justify-content-center'>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces." -Wendy R.</p>
 
         </div>
 
