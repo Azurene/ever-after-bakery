@@ -4,18 +4,8 @@ import React from "react";
 function Footer() {
 
     return (
-        <section>
-            {/* <div>
-                <h2>Contact Info</h2>
-                <ul>
-                    <li>Ever After Bakery</li>
-                    <li>8106 GENESTA AVE</li>
-                    <li>LAKE BALBOA, California 91406</li>
-                    <li>(818) 350-3179</li>
-                    <li>everafterbakery@yahoo.com</li>
-                </ul>
-            </div> */}
-
+        <section className="d-flex p-2 m-3 justify-content-evenly align-content-center">
+           
             <div id="contactInfo">
             <h2>Contact Info</h2>
                 <p>Ever After Bakery</p>
@@ -26,7 +16,7 @@ function Footer() {
             </div>
 
 
-            <div className="d-flex p-2 m-3 justify-content-evenly align-content-center">
+            <div className=" d-flex align-bottom mt-auto gap-5">
                 {/* 1. yelp */}
 
                 <a href="https://www.yelp.com/biz/ever-after-bakery-lake-balboa?osq=ever+after+bakery" rel="yelp" className="pe-auto">
@@ -54,8 +44,8 @@ function Footer() {
                 </a>
             </div>
 
-            <div id="slogan">
-                <p>Made in a Home Kitchen</p>
+            <div id="slogan" className="d-flex mt-auto align-center">
+                <p >Made in a Home Kitchen!</p>
             </div>
         </section>
 
