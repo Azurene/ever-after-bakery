@@ -1,41 +1,56 @@
 import React from 'react';
 
-function Header(props){
+function Header(props) {
     return (
-        
+
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link " href="/">Home <span class="sr-only"> </span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/About">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Baked-Goods">Baked Goods</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Newsletter">Newsletter</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Contact">Contact</a>
-      </li>
-    </ul>
-    <span class="navbar-text text-white ">
-              <a class="navbar" href="/">
-                <div class="logo-image">
-                    <img src='logo.JPEG' alt='logo' class="img-fluid"></img>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                {/* <a className="navbar-brand" href="/"></a> */}
+                {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button> */}
+                <div className="collapse navbar-collapse" id="navbarText">
+                    <ul className="navbar-nav mr-auto">
+                        {/* home */}
+                        <li className="nav-item active">
+                            <a className="nav-link" onClick={() => {
+                            props.setCurrentPage("Header")}} >Home <span className="sr-only"> </span></a>
+                        </li>
+                        {/* about */}
+                        <li className="nav-item">
+                            
+                            <button onClick={() => {
+                                props.setCurrentPage("About")}}>
+                                    About Me</button> 
+                                    
+                        </li>
+                        {/* baked goods */}
+                        <li className="nav-item">
+                            <a className="nav-link" href="/Baked-Goods">Baked Goods</a>
+                        </li>
+                        {/* newsletter */}
+                        <li className="nav-item">
+                            <a className="nav-link" href="/Newsletter">Newsletter</a>
+                        </li>
+                        {/* contact */}
+                        <li className="nav-item">
+                            <a className="nav-link" href="/Contact">Contact</a>
+                        </li>
+                    </ul>
+                    <span className="navbar-text text-white ">
+                        <a className="navbar" href="/">
+                            <div className="logo-image">
+                                <img 
+                                src={require(`../../assets/images/logo/logo.JPEG`)} 
+                                alt='logo' 
+                                className="img-fluid">
+
+                                </img>
+                            </div>
+                         </a>
+                    </span>
                 </div>
-              </a>
-    </span>
-  </div>
-</nav> 
+            </nav>
         </header>
     )
 }
