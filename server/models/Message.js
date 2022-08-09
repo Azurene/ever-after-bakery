@@ -20,4 +20,4 @@ const messageSchema = new Schema(
 
 const Message = model('Message', messageSchema);
 
-module.exports = User;
+module.exports = Message;
