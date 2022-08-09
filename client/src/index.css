@@ -1,8 +1,14 @@
+* {
+  background-color: black;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,5 +26,29 @@ code {
   font-weight: bold;
 
 }
+
+
+#bakedTitle {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bolder;
+}
+
+.carousel-caption, 
+.carousel-indicators{
+  /* background-color: white;
+  width: 50%;
+  align-items: center; */
+  opacity: 75%;
+}
+
+.carousel-indicators {
+  background: none;
+}
+
+.quote {
+  font-weight: bold;
+  color: rgb(250, 255, 176);
+}
+
 
 
