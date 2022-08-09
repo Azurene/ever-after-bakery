@@ -76,7 +76,7 @@ function BakedGoods(){
 </section>
 
             <div>
-                <h2 className='d-flex justify-content-center'>Cakes:</h2>
+                <h2 className='d-flex justify-content-center pt-5'>Cakes:</h2>
                 {/* cakes */}
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
@@ -162,7 +162,7 @@ function BakedGoods(){
             </div>
 
             <div>
-                <h2 className='d-flex justify-content-center'>Cookies:</h2>
+                <h2 className='d-flex justify-content-center pt-5'>Cookies:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -246,7 +246,7 @@ function BakedGoods(){
             </div>
 
             <div>
-                <h2 className='d-flex justify-content-center'>Other:</h2>
+                <h2 className='d-flex justify-content-center pt-5'>Other:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -290,7 +290,7 @@ function BakedGoods(){
             </div>
 
             <div>
-                <h2 className='d-flex justify-content-center'>Specialty Items:</h2>
+                <h2 className='d-flex justify-content-center pt-5'>Specialty Items:</h2>
                 <img
                     //src assignd required expression | incremental naming of the imgs using i
                     // default property --> is where the img has been saved. To render img, default property must be invoked  
@@ -373,7 +373,7 @@ function BakedGoods(){
                 />
             </div>
 
-            <p className='d-flex justify-content-center'>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces." -Wendy R.</p>
+            <p className='quote d-flex justify-content-center pt-3'>"Everything I make is custom. I take what ideas my clients have and turn them into delicious edible art pieces." -Wendy R.</p>
 
         </div>
 
