@@ -3,7 +3,7 @@ import React from 'react';
 function Header(props) {
     return (
 
-        <header>
+        <header className='container'>
             <nav className="navbar navbar-expand-lg">
                 {/* <a className="navbar-brand" href="/"></a> */}
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@ function Header(props) {
                         {/* home */}
                         <li className="nav-item active">
                             <button type='button' class='btn btn-black text-white'  onClick={() => {
-                            props.setCurrentPage("Header")}} >Home</button> <span  className="sr-only"> </span>
+                            props.setCurrentPage("About")}} >Home</button> <span  className="sr-only"> </span>
                         </li>
                         {/* about */}
                         <li className="nav-item active">
@@ -39,7 +39,7 @@ function Header(props) {
                         </li>
                     </ul>
                     <span className="navbar-text text-white ">
-                        <a className="navbar" href="/">
+                        
                             <div className="logo-image">
                                 <img 
                                 src={require(`../../assets/images/logo/logo.JPEG`)} 
@@ -48,7 +48,7 @@ function Header(props) {
 
                                 </img>
                             </div>
-                         </a>
+                        
                     </span>
                 </div>
             </nav>
