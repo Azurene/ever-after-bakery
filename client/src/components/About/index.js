@@ -2,17 +2,15 @@ import React from 'react';
 import wendy from '../../assets/images/about/wendy.jpeg';
 function About(){
     return (
-        <>
-        <section className='pt-4'>
-        <h2>Meet Wendy Ramirez |
-            Home Bakery Owner,
-            Wife, and Mother.</h2></section> 
-        <section className="about-container">
-        </section>
-        <section className='text-white pt-4'>
+        
+        <section className='pt-4 container'>
+        <h2 className='text-center pb-5'>Meet Wendy Ramirez | Home Bakery Owner, Wife, and Mother.</h2>
+      
+       
 
-            <div className='bio container'>
-                <p className='aboutme'>
+            <div className='bio container d-inline-flex'>
+               <img src={wendy} alt="" height='220'/> 
+               <p className='aboutme mx-5'>
                 I make custom treats for all celebrations and everything I make is custom.
                  I take what ideas my clients have and turn them into delicious edible art pieces.
                   My goal is to create a one of a kind dessert experience for every individual, 
@@ -31,11 +29,11 @@ function About(){
                         person that believes that everyday should be a celebration of Life.
                 </p>
             </div>
-            <div className='aboutMe-img'>
-                <img src={wendy} alt="" height='220'/>
-                </div>
+            
+                
+                
         </section>
-        </>
+        
     )
 }
 
