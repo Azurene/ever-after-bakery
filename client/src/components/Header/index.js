@@ -13,7 +13,7 @@ function Header(props) {
                     <ul className="navbar-nav mr-auto">
                         {/* home */}
                         <li className="nav-item active">
-                            <a className="nav-link" href='/'><button type='button' class='btn btn-white text-black'  onClick={() => {
+                            <a className="nav-link" href='/'><button type='button' class='btn btn-black text-black'  onClick={() => {
                             props.setCurrentPage("Header")}} >Home</button> <span  className="sr-only"> </span></a>
                         </li>
                         {/* about */}
@@ -42,7 +42,7 @@ function Header(props) {
                         <a className="navbar" href="/">
                             <div className="logo-image">
                                 <img 
-                                src={require(`../../Assets/images/logo/logo.jpeg`)} 
+                                src={require(`../../Assets/images/logo/logo.JPEG`)} 
                                 alt='logo' 
                                 className="img-fluid">
 
