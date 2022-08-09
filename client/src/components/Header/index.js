@@ -42,7 +42,7 @@ function Header(props) {
                         <a className="navbar" href="/">
                             <div className="logo-image">
                                 <img 
-                                src={require(`../../Assets/images/logo/logo.JPEG`)} 
+                                src={require(`../../assets/images/logo/logo.JPEG`)} 
                                 alt='logo' 
                                 className="img-fluid">
 
