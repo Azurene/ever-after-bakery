@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header';
 import About from './components/About';
 import BakedGoods from './components/Baked-Goods';
@@ -7,38 +7,37 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Login from './components/Login';
 
-
 function App() {
   // uses state to get the page
-  const [ currentPage, setCurrentPage ] = useState()
+  const [currentPage, setCurrentPage] = useState()
 
-function pageChanger(page) {
-  if(page === "About") {
-    return <About/> 
+  function pageChanger(page) {
+    if (page === "About") {
+      return <About />
+    }
+    if (page === "Baked-Goods") {
+      return <BakedGoods />
+    }
+    if (page === "Newsletter") {
+      return <Newsletter />
+    }
+    if (page === "Contact") {
+      return <Contact />
+    }
+    if (page === "Login") {
+      return <Login />
+    }
   }
- if(page === "Baked-Goods") {
-    return <BakedGoods/>
-  }
-  if(page === "Newsletter") {
-    return <Newsletter/>
-  }
-  if(page === "Contact") {
-    return <Contact/>
-  }
-  if(page === "Login") {
-    return <Login/>
-  }
-}
   return (
     <div className="App">
-      <Header 
-      setCurrentPage={setCurrentPage}
-      className="App-header"/>
-     {pageChanger(currentPage)}
-      <Footer/>
+      <Header
+        setCurrentPage={setCurrentPage}
+        className="App-header" />
+      {pageChanger(currentPage)}
+      <Footer />
 
       <main>
-      {/* {!contactSelected ? (
+        {/* {!contactSelected ? (
       <>
        <Project projectImages={projectImages}></Project>
        <Resume></Resume>

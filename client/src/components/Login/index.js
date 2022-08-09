@@ -1,13 +1,13 @@
-import React from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react';
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
 
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
-function Login(props) {
+const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN_USER);
 
@@ -41,19 +41,43 @@ function Login(props) {
       password: '',
     });
   };
-  
+
   return (
-    <Form className='contactform container'>
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="Textarea">
-        <Form.Label>Please Contact for any general questions:</Form.Label>
-        <Form.Control as="textarea" rows={3} />
-      </Form.Group>
-      <Button type="submit">Login</Button>
-    </Form>
+    <main className="flex-row justify-center mb-4">
+      <div className="col-12 col-md-6">
+        <div className="card">
+          <h4 className="card-header">Login</h4>
+          <div className="card-body">
+            <form onSubmit={handleFormSubmit}>
+              <input
+                className="form-input"
+                placeholder="Your email"
+                name="email"
+                type="email"
+                id="email"
+                value={formState.email}
+                onChange={handleChange}
+              />
+              <input
+                className="form-input"
+                placeholder="******"
+                name="password"
+                type="password"
+                id="password"
+                value={formState.password}
+                onChange={handleChange}
+              />
+              <button className="btn d-block w-100" type="submit">
+                Submit
+              </button>
+            </form>
+
+            {error && <div>Login failed</div>}
+          </div>
+        </div>
+      </div>
+    </main>
+
 
 
 

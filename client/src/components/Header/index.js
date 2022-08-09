@@ -13,42 +13,47 @@ function Header(props) {
                     <ul className="navbar-nav mr-auto">
                         {/* home */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-black text-white'  onClick={() => {
-                            props.setCurrentPage("About")}} >Home</button> <span  className="sr-only"> </span>
+                            <button type='button' class='btn btn-black text-white' onClick={() => {
+                                props.setCurrentPage("About")
+                            }} >Home</button> <span className="sr-only"> </span>
                         </li>
-                        {/* about */}
+                        {/* login */}
                         <li className="nav-item active">
                             <button type='button' class='btn btn-white text-white' onClick={() => {
-                                props.setCurrentPage('Login')}}>Login</button><span className='sr-only'></span>
-                            
-                                    </li>
+                                props.setCurrentPage('Login')
+                            }}>Login</button><span className='sr-only'></span>
+
+                        </li>
                         {/* baked goods */}
                         <li className="nav-item active">
                             <button type='button' class='btn btn-white text-white' onClick={() => {
-                                props.setCurrentPage('Baked-Goods')}}>Baked Goods</button><span  className='sr-only'></span>
+                                props.setCurrentPage('Baked-Goods')
+                            }}>Baked Goods</button><span className='sr-only'></span>
                         </li>
                         {/* newsletter */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-white text-white' onClick={() => { 
-                            props.setCurrentPage('Newsletter')}}>Newsletter</button><span  className='sr-only'></span>
+                            <button type='button' class='btn btn-white text-white' onClick={() => {
+                                props.setCurrentPage('Newsletter')
+                            }}>Newsletter</button><span className='sr-only'></span>
                         </li>
                         {/* contact */}
                         <li className="nav-item active">
-                           <button type='button' class='btn btn-white text-white' onClick={()  => {
-                                props.setCurrentPage('Contact')}}>Contact</button><span className='sr-only'></span>
+                            <button type='button' class='btn btn-white text-white' onClick={() => {
+                                props.setCurrentPage('Contact')
+                            }}>Contact</button><span className='sr-only'></span>
                         </li>
                     </ul>
                     <span className="navbar-text text-white ">
-                        
-                            <div className="logo-image">
-                                <img 
-                                src={require(`../../assets/images/logo/logo.JPEG`)} 
-                                alt='logo' 
+
+                        <div className="logo-image">
+                            <img
+                                src={require(`../../assets/images/logo/logo.JPEG`)}
+                                alt='logo'
                                 className="img-fluid">
 
-                                </img>
-                            </div>
-                        
+                            </img>
+                        </div>
+
                     </span>
                 </div>
             </nav>
