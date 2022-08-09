@@ -3,7 +3,7 @@ import wendy from '../../assets/images/about/wendy.jpeg';
 function About(){
     return (
         <>
-        <section className='text-black pt-4'>
+        <section className='pt-4'>
         <h2>Meet Wendy Ramirez |
             Home Bakery Owner,
             Wife, and Mother.</h2></section> 
@@ -12,7 +12,7 @@ function About(){
         <section className='text-white pt-4'>
 
             <div className='bio container'>
-                <p className=' aboutme text-black'>
+                <p className='aboutme'>
                 I make custom treats for all celebrations and everything I make is custom.
                  I take what ideas my clients have and turn them into delicious edible art pieces.
                   My goal is to create a one of a kind dessert experience for every individual, 
