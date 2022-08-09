@@ -1,41 +1,32 @@
-const faker = require('faker');
-
+// const faker = require('faker');
+const userSeeds = require('./userSeed.json');
+// const thoughtSeeds = require('./thoughtSeed.json');
 const db = require('../config/connection');
-const { Message, User } = require('../models');
+const { User } = require('../models');
 
 db.once('open', async () => {
-    try {
-        await User.deletemany({});
-        await Message.deletemany({});
+  try {
+    // await Thought.deleteMany({});
+    await User.deleteMany({});
 
-        // create user data
-        const userData = [];
+    await User.create(userSeeds);
 
-        for (let i = 0; i < 25; i += 1) {
-            const email = faker.internet.email();
-            const password = faker.internet.password();
+    // for (let i = 0; i < thoughtSeeds.length; i++) {
+    //   const { _id, thoughtAuthor } = await Thought.create(thoughtSeeds[i]);
+    //   const user = await User.findOneAndUpdate(
+    //     { username: thoughtAuthor },
+    //     {
+    //       $addToSet: {
+    //         thoughts: _id,
+    //       },
+    //     }
+    //   );
+    // }
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
 
-            userData.push({ email, password });
-        }
-
-        await User.collection.insertMany(userData);
-
-        const messageData = [];
-
-        for (let i = 0; i < 25; i += 1) {
-            const name = faker.name.name();
-            const email = faker.internet.email();
-            const message = faker.lorem.words(Math.round(Math.random() * 20) + 1);
-
-            messageData.push({ name, email, message });
-        }
-
-        await Message.collection.insertMany(messageData);
-    } catch (err) {
-        console.error(err);
-        process.exit(1);
-    }
-
-    console.log('All Done!');
-    process.exit(0);
+  console.log('all done!');
+  process.exit(0);
 });
