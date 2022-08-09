@@ -5,6 +5,7 @@ import BakedGoods from './components/Baked-Goods';
 import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Login from './components/Login';
 
 
 function App() {
@@ -23,6 +24,9 @@ function pageChanger(page) {
   }
   if(page === "Contact") {
     return <Contact/>
+  }
+  if(page === "Login") {
+    return <Login/>
   }
 }
   return (

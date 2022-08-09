@@ -19,7 +19,7 @@ function Header(props) {
                         {/* about */}
                         <li className="nav-item active">
                             <button type='button' class='btn btn-white text-white' onClick={() => {
-                                props.setCurrentPage('About')}}>About</button><span className='sr-only'></span>
+                                props.setCurrentPage('Login')}}>Login</button><span className='sr-only'></span>
                             
                                     </li>
                         {/* baked goods */}
