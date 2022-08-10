@@ -14,8 +14,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// const client = ...
-
 client
   .query({
     query: gql`

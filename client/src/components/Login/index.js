@@ -31,6 +31,7 @@ function Login  (props) {
       });
 
       Auth.login(data.login.token);
+      alert("Login successful!");
     } catch (e) {
       console.error(e);
     }
@@ -67,21 +68,15 @@ function Login  (props) {
                 value={formState.password}
                 onChange={handleChange}
               />
-              <button className="btn d-block w-100" type="submit">
+              <button className="btn btn-white d-block w-100" type="submit">
                 Submit
               </button>
             </form>
-
             {error && <div>Login failed</div>}
           </div>
         </div>
       </div>
     </main>
-
-
-
-
-
   );
 }
 

@@ -6,20 +6,23 @@ import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Login from './components/Login';
-import { useQuery, gql } from '@apollo/client';
-// import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
 
-// const client = new ApolloClient({
-//   uri: '/graphql',
-//   cache: new InMemoryCache(),
-// });
+const httpLink = createHttpLink({
+  uri: 'http://localhost:3001/graphql',
+});
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(),
+});
 
 function App() {
   const [currentPage, setCurrentPage] = useState()
 
-function pageChanger(page) {
-  
+  function pageChanger(page) {
+
     if (page === "About") {
       return <About />
     }
@@ -35,48 +38,23 @@ function pageChanger(page) {
     if (page === "Login") {
       return <Login />
     }
-    
+
   }
 
 
   // uses state to get the page
   return (
- 
-  
-
-  
-  
-    <div className="App">
-      <Header
-        setCurrentPage={setCurrentPage}
-        className="App-header" />
-      {pageChanger(currentPage)}
-      <Footer />
-      {/* <LoginMutation /> */}
-    </div>
-  
+    <ApolloProvider client={client}>
+      <div className="App">
+        <Header
+          setCurrentPage={setCurrentPage}
+          className="App-header" />
+        {pageChanger(currentPage)}
+        <Footer />
+        {/* <LoginMutation /> */}
+      </div>
+    </ApolloProvider>
   );
 }
-
-// const GET_MUTATION = gql`
-//   query GetMutation { 
-//     loginStuff {
-//       id
-//       username
-//       email
-//     }
-//   }
-// `;
-// function LoginMutation() {
-//   const { data } = useQuery(GET_MUTATION);
-
-//   return data({ id, username, email } (
-//     <div key={id}>
-//       <div>{username}</div>
-//       <form>{email}</form>
-//     </div>
-//   ) );
-// }
-
 
 export default App;

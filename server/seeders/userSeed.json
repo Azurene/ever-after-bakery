@@ -1,4 +1,9 @@
 [
+    {
+        "username" : "test",
+        "email" : "test@test.test",
+        "password" : "password1234"
+    },
     { 
         "username" : "Molly48", 
         "email" : "Molly48_Waters59@hotmail.com", 
