@@ -155,7 +155,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Jodee - jodee’s email
+Jodee C
+* Email: leaning.frets.08@icloud.com
+* GitHub: https://github.com/Azurene
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
