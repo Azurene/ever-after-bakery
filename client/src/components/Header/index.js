@@ -13,32 +13,32 @@ function Header(props) {
                     <ul className="navbar-nav mr-auto">
                         {/* home */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-black text-white' onClick={() => {
+                            <button type='button' className='btn btn-black text-white' onClick={() => {
                                 props.setCurrentPage("About")
                             }} >Home</button> <span className="sr-only"> </span>
                         </li>
                         {/* login */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-white text-white' onClick={() => {
+                            <button type='button' className='btn btn-white text-white' onClick={() => {
                                 props.setCurrentPage('Login')
                             }}>Login</button><span className='sr-only'></span>
 
                         </li>
                         {/* baked goods */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-white text-white' onClick={() => {
+                            <button type='button' className='btn btn-white text-white' onClick={() => {
                                 props.setCurrentPage('Baked-Goods')
                             }}>Baked Goods</button><span className='sr-only'></span>
                         </li>
                         {/* newsletter */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-white text-white' onClick={() => {
+                            <button type='button' className='btn btn-white text-white' onClick={() => {
                                 props.setCurrentPage('Newsletter')
                             }}>Newsletter</button><span className='sr-only'></span>
                         </li>
                         {/* contact */}
                         <li className="nav-item active">
-                            <button type='button' class='btn btn-white text-white' onClick={() => {
+                            <button type='button' className='btn btn-white text-white' onClick={() => {
                                 props.setCurrentPage('Contact')
                             }}>Contact</button><span className='sr-only'></span>
                         </li>
